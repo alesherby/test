@@ -1,3 +1,43 @@
-.big {
-    color:red;
+.FirstSection {
+  background-color: brown;
+}
+
+.MainWrapper {
+  height: 1500px;
+  /* background-color: bisque; */
+  max-width: 1146px;
+  margin: 0 auto;
+  background-image: url(../images/dog.png);
+}
+
+.Header_Menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Header_Menu {
+    flex-direction: column;
+  }
+}
+
+.Header_MenuItem {
+  display: inline;
+}
+
+.PictureDevider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PictureDevider_Line {
+  width: 40%;
+  height: 1px;
+  border-top: 1px solid black;
+}
+
+.Header_MenuItem:nth-child(3) {
+  background-color: blue;
 }
